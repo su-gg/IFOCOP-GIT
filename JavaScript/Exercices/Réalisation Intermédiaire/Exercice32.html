@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      [onclick] {
+        cursor: pointer;
+      }
+    </style>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 21</title>
+    <script>
+      /* Mon test :
+      var voirSite = function () {
+        question = confirm("Voulez-vous aller sur Google");
+        if (question) {
+          open("https://www.google.fr", "Google", "directories=no,menubar=no");
+        } else {
+          var url = prompt("Veuillez saisir l'URL d'un site alternatif");
+          if (reponse == true) {
+            open(url, "site", "directories=no", "menubar=no");
+          } else {
+            alert("tant pis!");
+            return question;
+          }
+        }
+      };*/
+
+      var voirSite = function () {
+        var url = false;
+        while (!url) {
+          url = confirm("Voulez-vous aller sur Google");
+          if (url) {
+            open(
+              "https://www.google.fr",
+              "Google",
+              "directories=no,menubar=no"
+            );
+          } else {
+            url = prompt("Veuillez saisir l'URL d'un site alternatif");
+            if (url != "" && url != null) {
+              open(url, "site", "directories=no", "menubar=no");
+            } else {
+              alert("tant pis!");
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Mon nouveau document</h1>
+    <p onclick="voirSite();">Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

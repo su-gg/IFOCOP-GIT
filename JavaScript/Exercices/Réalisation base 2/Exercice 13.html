@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 13</title>
+    <style>
+      [onclick] {
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      // question 1 :
+
+      var maFonction = function () {
+        confirm(" Ceci est un choix");
+      };
+
+      // question 2 :
+      var nouvelleFonction = function () {
+        var retourConfirm = confirm(" Ceci est un nouveau choix");
+        alert(retourConfirm);
+      };
+
+      // Question 3 : Réaliser un algo
+      var actionEtTest = function () {
+        //j'affiche une B.d.D contenant un message "Voulez-vous continuer" :
+        var reponseUtilisateur = confirm("Voulez-vous continuer?");
+        // si l'utilisateur cliquer sur OK j'affiche un message "vous avez cliqué sur OK"
+        if (reponseUtilisateur) {
+          alert("Vous avez cliqué sur OK");
+        } else {
+          alert("Vous avez cliqué sur ANNULER");
+        }
+      };
+    </script>
+  </head>
+  <body onload="actionEtTest()">
+    <h1>Exercice 13</h1>
+    <p onclick="maFonction()" ;>Premier paragraphe</p>
+    <p onclick="nouvelleFonction()">Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

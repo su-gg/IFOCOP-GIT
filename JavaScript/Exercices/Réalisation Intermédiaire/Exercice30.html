@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      [onclick] {
+        cursor: pointer;
+      }
+    </style>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 30</title>
+    <script>
+      var voirSite = function () {
+        while (url == "" || url == null) {
+          url = prompt("Donnez l'adresse d'un site");
+        }
+        open(url, "site", "directories=no,menubar=no");
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Mon nouveau document</h1>
+    <p onclick="voirSite();">Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

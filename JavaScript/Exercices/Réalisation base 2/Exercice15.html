@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 15</title>
+    <script>
+      // Question 1 : (fonctionne)
+      /* var Test1 = function () {
+        var reponseUtilisateur = confirm("voulez-vous continuer");
+        while (reponseUtilisateur == true) {
+          reponseUtilisateur = confirm("voulez-vous continuer?");
+        }
+      };*/
+
+      // corrigé :
+      var choix = true;
+      while (choix) {
+        choix = confirm("Voulez-vous continuer");
+      }
+    </script>
+  </head>
+  <body onload="choix">
+    <h1>Mon nouveau document</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

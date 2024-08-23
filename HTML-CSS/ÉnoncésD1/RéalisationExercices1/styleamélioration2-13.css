@@ -1,0 +1,9 @@
+fieldset {
+  border-color: pink;
+  border-width: 10px;
+}
+
+legend {
+  font-weight: bold;
+  text-transform: uppercase;
+}

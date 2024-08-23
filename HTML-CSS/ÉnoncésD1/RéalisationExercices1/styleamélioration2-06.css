@@ -1,0 +1,9 @@
+.une p {
+  height: 20px;
+  overflow: hidden;
+}
+
+.deux p {
+  height: 20px;
+  overflow-y: auto;
+}

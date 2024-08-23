@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 33</title>
+    <script>
+      var listeUrl = [
+        "https://www.google.com",
+        "https://www.yahoo.com",
+        "https://www.bing.com",
+        "https://www.facebook.com",
+        "https://www.airbnb.com",
+      ];
+      var compteur = 0;
+      while (compteur < 5) {
+        open(
+          listeUrl[compteur],
+          listeUrl[compteur],
+          "directories=no,menubar=no"
+        );
+        compteur++;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Mon nouveau document</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exemple2-01</title>
+    <script>
+            var uneVariable;
+            var variableUn, variableDeux, variableTrois;
+            variableDeux = 19;
+            var autreVariable = "coucou";
+            variableUn = "Nous sommes le vendredi";
+            variableTrois = -19.6;
+            variableUn = false;
+            variableDeux = variableTrois;
+
+            19 + 35 - 6 * 4; // priorité "naturelle" -> multiplication avant addition et soustraction
+            (19 + 35 - 6) * 4; // priorité à la parenthèse avant la multiplication
+
+            22 % 4; // division optenant un nombre entier la plus proche : 5 ce qui donne 20, il reste 2
+
+            var grandVrac = [19, "kd89", true, 34, "un texte"];
+            alert(grandVrac[1]); // affiche 'kd89'
+            alert(grandVrac[7]); // affiche 34
+            grandVrac[5] = 'un ajout';
+            grandVrac[7] = 'encore une entrée';
+            // avec ce dernier ajout, l'indice 6 existe, mais il est indéfini.
+
+            var unTableauComplexe = ['roue','portiere','toit','coffre',[19,45,23,-123], 'moteur','volant',[true,false, 'un petit texte']]
+            unTableauComplexe[2]; // affiche trois
+            unTableauComplexe[4][3]; // affiche -123
+            unTableauComplexe[7][0]; // affiche true
+            unTableauComplexe[5] = ['essence','gasoil', 'gpl']; // l'entrée contenant 'moteur' contient désormais le tableau fournit ici
+
+            var leNombre = 19;
+            leNombre >= 0; //pour vérifier que le nombre dans la variable est positif
+            leNombre >=0 && leNombre <= 100; // pour vérifier que le nombre de la variable est comprise entre 0 et 100 (limites comprises).
+
+            typeof 19; // donne 'number'
+            typeof  'coucou'; // donne 'string'
+            typeof true;  // donne 'boolean'
+            typeof 21 == 'number' ; // donne true
+            typeof leNombre == 'number' && leNombre <=0; // pour vérifier qu'il s'agit bien d'un nombre dans la variable et que celui-ci est positif
+            typeof leNombre == 'number' && (leNombre < 50 || leNombre > 100);  // pour vérifier qu'il s'agit bien d'un nombre dans la variable et que celui-ci est positif
+
+            var valeur = 'un message';
+            if (typeof valeur == 'number' || typeof valeur == 'string') {
+              alert('valeur contient bien un nombre ou un texte');
+            }
+
+            var uneFonction = function(valeurfournie) {
+              alert('Voici la valeur fournie: '+ valeurfournie);
+            };
+
+            uneFonction('Je suis un texte');
+
+
+            var uneFonctionEvolution =  function(valeurfournie) {
+
+            };
+
+            uneFonctionEvolutionUn(783);
+
+            var uneFonctionEvolutionDeux = function(valeurfournie) {
+              if (typeof valeur == 'number' || typeof valeur == 'string');
+
+            }
+            {
+                alert('valeur contient bien un nombre ou un texte');
+
+            }
+
+              else {
+              alert('Vous n\'avez pas fourni un texte ou un nombre');
+            };
+            UneFonctionEvolutionTrois(true);
+
+            var uneFonctionEvolutionTrois = function(valeurfournie) {
+              if (typeof valeur == 'number') {
+                  var calcul = valeurfournie * 10;
+              alert('Le résultat est' + calcul);
+            } else {
+              if (typeof valeurfournie =="string") {
+                  alert ('Vous avez donné le texte suivant : ' + valeurfournie);
+              } else {
+      alert ('vous n\'avez pas fourni un texte ou un nombre');
+              }
+          }
+      };
+      uneFonctionEvolutionTrois(39);
+      uneFonctionEvolutionTrois('Bonjour à tous');
+
+      var uneFonctionEvolutionQuatre = function(valeurfournie) {
+              if (typeof valeur == 'number') {
+                  var calcul = valeurfournie * 10;
+                  return calcul
+            } else {
+            alert ('vous n\'avez pas fourni un texte ou un nombre');
+              }
+      };
+
+      var retourCalcul = uneFonctionEvolutionQuatre(120);
+      alert()
+    </script>
+  </head>
+  <body>
+    <h1>Mon nouveau document</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+-------------------------------------------------------
+------------------  Exercice 1 - 01  ------------------
+-------------------------------------------------------
+
+----------------   Présentation   -------------------
+
+En HTML, on peux écrire des paragraphes. Pour cela, il faut encadrer le texte du paragraphe entre deux balises p, une ouvrante et une fermante.
+
+----------------   Réalisation   -------------------
+
+1 - Créez un nouveau document avec l'extension html et bâtissez la structure de base d'une page HTML (n'oubliez pas la déclaration pour l'encodage).
+2 - Écrivez un texte que vous diviserez en trois paragraphes.

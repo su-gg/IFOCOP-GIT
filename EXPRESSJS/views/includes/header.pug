@@ -1,0 +1,8 @@
+block append css 
+  link(rel="stylesheet", href="/styles/navbar.css")
+nav
+  ul
+    each item in menuItems
+      if (path !== item.url)
+        li
+          a(href=item.url) #{item.name}

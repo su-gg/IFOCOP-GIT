@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , inital-scaled="1.0" />
+    <title>Exemple1-09</title>
+    <script>
+      var pierres;
+      pierres = ["granit", "basalte", "améthyste", "rubis"];
+      alert(pierres[1]); // affiche basalte
+      var météo;
+      météo = [
+        "nuage",
+        "soleil",
+        "pluie",
+        "neige",
+        "brouillard",
+        "bruine",
+        "vent",
+      ];
+      // pour ajouter un nouvel élément:
+      météo[7] = [grèle];
+      // pour remplacer une valeur:
+      météo[2] = [averse];
+
+      var nombres;
+      nombres = [19, 304, -34, 98.8, 4];
+      // Pour afficher 98.8
+      alert(nombre[3]);
+
+      var melange;
+      melange = ["chaise", 18, "maison", 98 - 87];
+
+      // un tableau qui contient des tableaux
+      var mesures = [
+        "lundi",
+        ["nuage", 19],
+        "mardi",
+        ["soleil", 23],
+        "mercredi",
+        ["éclaircies", 21],
+      ];
+      alert(mesures[2]); // affiche 'mardi'
+      alert(mesures[3][0]); // affiche 'soleil'
+      mesures[(3)[2]] = "Très belle journée";
+
+      mesures[5][2] =
+        "Le" + mesures[4] + ",il y a eu des" + mesures[(5)[0] + "."];
+      alert(mesures)[5][2]; // affiche: 'le mercredi il y a eu des éclaircies'
+    </script>
+  </head>
+  <body>
+    <h1>Exemple 1 - 09</h1>
+  </body>
+</html>

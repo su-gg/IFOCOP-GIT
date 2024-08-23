@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exemple2-03</title>
+    <script>
+      // Pour poser une question à un utilisateur
+      confirm("Voulez-vous continuer ?");
+
+      // Pour poser une question à un utilisateur avec la possibilité d'une réponse
+      prompt("une question posée");
+
+      // Manipulation de nombres:
+      parseFloat("10 maisons"); // donne 10
+      parseFloat("soleil"); // NaN: not a number
+      // pour les test on utilise is nan
+      var reponse = parseFloat("lune"); // donne NaN
+      isNaN(reponse); // donne true
+      var autreReponse = parseFloat(23); // 23
+      isNaN(autreReponse); // donne false
+    </script>
+  </head>
+  <body>
+    <h1>Mon nouveau document</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

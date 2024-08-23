@@ -1,0 +1,10 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#222D43",
+    "titleBar.activeBackground": "#2F405E",
+    "titleBar.activeForeground": "#F9FAFC"
+  },
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "window.autoDetectColorScheme": false,
+  "terminal.integrated.drawBoldTextInBrightColors": true
+}

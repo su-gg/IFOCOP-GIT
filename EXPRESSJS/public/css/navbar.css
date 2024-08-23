@@ -1,0 +1,26 @@
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 16px;
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+}
+
+nav ul li a {
+  color: darkolivegreen;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+  margin : 0;
+  padding: 0;
+}

@@ -1,0 +1,11 @@
+extends ../layouts/layout.pug
+block pageContent
+  form#signin-form
+    label(for='email') E-mail
+    input#email(type='email' name='email')
+    label(for='password') Mot de passe
+    input#password(type='password' name='password')
+    button(type='submit') Connexion
+  br
+  div#display-result
+  script(src='/scripts/signin.js')

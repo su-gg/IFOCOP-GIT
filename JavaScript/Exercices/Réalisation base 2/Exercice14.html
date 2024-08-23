@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 14</title>
+    <style>
+      [onclick] {
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      // Question 1 :
+      var Test1 = function () {
+        var reponseUtilisateur = confirm("voulez-vous continuer");
+        if (reponseUtilisateur) {
+          alert("Vous avez cliqué sur OK");
+        } else {
+          alert("Vous avez cliqué sur ANNULER");
+        }
+      };
+
+      // Question 2 :
+      var Test2 = function () {
+        var reponseUtilisateur2 = confirm("voulez-vous continuer");
+        if (reponseUtilisateur2) {
+          alert("Vous avez cliqué sur OK");
+        } else {
+          alert("Vous avez choisi  d'ANNULER");
+        }
+      };
+    </script>
+  </head>
+  <body onload="Test1()">
+    <h1 onmouseover="Test2()" ;>Mon nouveau document</h1>
+    <p onclick="Test2()">Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

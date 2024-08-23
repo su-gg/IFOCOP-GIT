@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Meta nécessaire pour Bootstrap => mobile first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Lien vers la feuille de style de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="../Bootstrap/Vendors/Bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../Bootstrap/monscript.js">
+    <!-- Lien vers ma feuille de style personnelle-->
+    <link rel="stylesheet" href="../Bootstrap/Assets/CSS/monstyle.css" />
+
+    <title>Journée Bootstrap</title>
+  </head>
+  <body>
+    <!-- Le container est l'élément de structuration de base de Bootstrap-->
+    <div class="container tomato">Un container</div>
+    <div class="container-fluid yellow">Un container fluide</div>
+    <div class="container-lg tomato">Un container avec un breakpoint</div>
+
+    <div class="container">
+      <!-- on a des row au sein d'un container-->
+      <div class="row green">Une ligne</div>
+      <!-- chaque ligne est divisée en colonnes (max 12 )-->
+      <div class="row">
+        <div class="col-1 blue">Col</div>
+        <div class="col-1 pink">Col</div>
+        <div class="col-1 blue">Col</div>
+        <div class="col-1 pink">Col</div>
+        <div class="col-1 blue">Col</div>
+        <div class="col-1 pink">Col</div>
+        <div class="col-1 blue">Col</div>
+        <div class="col-1 pink">Col</div>
+        <div class="col-1 blue">Col</div>
+        <div class="col-1 pink">Col</div>
+        <div class="col-1 blue">Col</div>
+        <div class="col-1 pink">Col</div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 yellow">Col</div>
+        <div class="col-4 green">Col</div>
+        <div class="col-4 yellow">Col</div>
+      </div>
+      <!-- on peut spécifier des colonnes pour chaque breakpoint-->
+      <div class="row">
+        <div class="col-sm-10 col-md-3 pink">Col</div>
+        <div class="col-sm-12 col-md-6 blue">Col</div>
+        <div class="col-sm-12 col-md-3 pink">Col</div>
+      </div>
+
+      <div class="row">
+        <!-- Dans le pire des ca on peut utiliser une déclaration pour chaque breakpoint. Ce qui rend Bootstrap un peu verbeux...-->
+        <div
+          class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-6 yellow"
+        >
+          Col
+        </div>
+      </div>
+
+      <!-- Si on ne spécifie pas de taille à nos colonnes, bootstrap répartit équitablement l'espace-->
+
+      <div class="row">
+        <div class="col pink">Col</div>
+        <div class="col yellow">Col</div>
+        <div class="col pink">Col</div>
+        <!-- Ici c'est équivalent à faire 3 col-4 -->
+      </div>
+
+      <!-- On peut décaler des colonnes avec la classe .offset-->
+      <div class="row">
+        <div class="col-3 blue">Col</div>
+        <div class="col-3 offset-3 pink">Col</div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 blue">Col</div>
+        <div class="col-3 offset-lg-3 pink">Col</div>
+      </div>
+    </div>
+
+    <!-- Exercice citation -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6 offset-3 col-lg-4 offset-lg-0">
+          <img
+            src="Assets/coco_chanel.jpg"
+            class="img-fluid"
+            alt="coco_chanel"
+          />
+        </div>
+        <div class="col-10 offset-1 col-lg-4 offset-lg-0">
+          <blockquote>
+            "Je n'ai rien à faire de ce que vous pensez de moi. Moi je ne pense
+            pas du tout à vous."
+          </blockquote>
+        </div>
+        <div class="col-4 offset-6 col-lg-2 offset-lg-0">Coco Chanel</div>
+      </div>
+
+      <div class="container">
+            <div class="row" class="container-fluid">
+              <div class="col-6 offset-3 col-lg-4 offset-lg-0" >
+                <img
+                  src="/Users/suu/IFOCOP/Bootstrap/Assets/SimoneDB.jpeg"
+                  class="img-fluid"
+                  alt="coco_chanel"
+                />
+              </div>
+              <div class="col-10 offset-1 col-lg-4 offset-lg-0">
+                <blockquote>"On ne naît pas femme : on le devient"
+                </blockquote>
+              </div>
+              <div class="col-4 offset-6 col-lg-2 offset-lg-0">Simone de Beauvoir</div>
+            </div>
+
+      
+    </div>
+    <!-- FIN exercice citation-->
+
+    <h1>Hello, world!</h1>
+    <!-- Pour les JS de Bootstrap , soit on inclut tout le package popper + bootstrap en une fois -->
+    <!-- <script src="../Bootstrap/Vendors/Bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <!-- soit on les inclut séparemment -->
+    <!-- on commence part popper-->
+    <script src="../Bootstrap/Vendors/Popper/popper.min.js"></script>
+    <!-- puis bootstrap-->
+    <script src="../Bootstrap/Vendors/Bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+table {
+  border: 3px solid brown;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid lightslategray;
+  border-collapse: collapse;
+  border-style: dashed;
+}
+
+th {
+  background-color: chocolate;
+  color: beige;
+}
+
+.row4 {
+  font-weight: bold;
+}

@@ -1,0 +1,20 @@
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: right;
+}
+
+.premier {
+  line-height: 10mm;
+}
+
+.hsec {
+  letter-spacing: 2mm;
+}
+
+.init {
+  text-decoration: line-through;
+}

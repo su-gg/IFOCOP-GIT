@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 27</title>
+    <script>
+      var quatreQuestions = function () {
+        var tableauTextes = [];
+        for (var i = 0; i < 4; i++) {
+          var leTexte = "";
+          while (leTexte == "" || leTexte == null) {
+            leTexte = prompt("Donnez le texte" + (i + 1));
+          }
+          tableauTextes[i] = leTexte;
+        }
+        for (var j = 0; tableauTextes[j]; j++) {
+          alert(tableauTextes[j]);
+        }
+      };
+      /*alert(tableauTextes[0]);
+          alert(tableauTextes[1]);
+          alert(tableauTextes[2]);
+          alert(tableauTextes[3]);*/
+    </script>
+  </head>
+  <body onload="quatreQuestions();">
+    <h1>Mon nouveau document</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

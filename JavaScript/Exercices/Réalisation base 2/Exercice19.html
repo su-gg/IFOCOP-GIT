@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 19</title>
+    <script>
+      // Question 1 : Utilisez la boucle while avec un compteur ainsi que la fonction alert()
+
+      /* Mon essai loupé 🥹 
+      var bordel = 0;
+      while (bordel < 5) {
+        bordel++;
+      }
+      alert(bordel); */
+
+      var bordel = function () {
+        var compteur = 1;
+        while (compteur < 4) {
+          alert("valeur de compteur " + compteur);
+          compteur = compteur + 1;
+        }
+
+        // Question 2 : Utilisez la boucle while avec un compteur ainsi que la fonction alert().
+
+        var listeTextes = ["C'est", "horriblement ", " difficile"];
+        var parcoursTableau = 0;
+        while (parcoursTableau < 3) {
+          alert(listeTextes[parcoursTableau]);
+          parcoursTableau = parcoursTableau + 1;
+        }
+      };
+    </script>
+  </head>
+  <body onload="bordel();">
+    <h1>Mon nouveau document</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

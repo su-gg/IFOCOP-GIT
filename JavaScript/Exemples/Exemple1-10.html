@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , inital-scaled="1.0" />
+    <title>Exemple1-10</title>
+    <script>
+      // Je crée une nouvelle fonction anonyme que je stock dans une variable;
+      var maFonction = function () {
+        var resultat = 18 + 23;
+        alert(resultat);
+      };
+
+      // J'exécute la fonction ci-dessus
+      maFonction();
+
+      var afficheMessage = function() {
+        alert('Bonjour à tous');
+      };
+
+      afficheMessage():afficheMessage
+      // Je crée une nouvelle variable (autreoutil) dans laquelle je stocje la fonction enregistrée dans afficheMessage qiu reste présente cependant dans afficheMessage.
+      var autreoutil;
+      autreoutil = afficheMessage;
+      autreoutil();
+    </script>
+  </head>
+  <body>
+    <h1>Exemple 1 - 10</h1>
+  </body>
+</html>

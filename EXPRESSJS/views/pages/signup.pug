@@ -1,0 +1,15 @@
+extends ../layouts/layout.pug
+block pageContent
+  form#signup-form
+    label(for='firstname') Prénom
+    input#firstname(type='firstname' name='firstname')
+    label(for='lastname') Nom
+    input#lastname(type='lastname' name='lastname')
+    label(for='email') E-mail
+    input#email(type='email' name='email')
+    label(for='password') Mot de passe
+    input#password(type='password' name='password')
+    button(type='submit') Envoyer
+  br
+  div#notification-message
+  script(src='/scripts/signup.js')

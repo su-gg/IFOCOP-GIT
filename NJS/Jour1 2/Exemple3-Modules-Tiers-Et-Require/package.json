@@ -1,0 +1,14 @@
+{
+  "name": "exemple3-modules-tiers-et-require",
+  "version": "1.0.0",
+  "main": "exemple3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sami Radi",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "uuid": "^10.0.0"
+  }
+}

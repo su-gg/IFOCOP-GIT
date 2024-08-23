@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 22</title>
+    <script>
+      // Question1
+      var premiereVar = function () {
+        var reponseU = prompt("Veuillez saisir un message");
+        reponseU = parseFloat(reponseU);
+        reponseU = isNaN(reponseU);
+        alert(reponseU);
+      };
+
+      var number = function () {
+        var reponseU = prompt("Veuillez saisir un nombre");
+        reponseU = parseFloat(reponseU);
+        if (isNaN(reponseU)) {
+          alert("Vous devez saisir un nombre");
+        } else {
+          alert("Merci d'avoir saisi un nombre");
+        }
+      };
+
+      /* Question3
+          var number = function () {
+            var reponseD = null;
+            if (reponseD == null || reponseD == "") {
+              reponseU = prompt("Veuillez saisir un nombre");
+            }
+            alert(reponseD);
+          }; */
+    </script>
+  </head>
+  <body onload="premiereVar();">
+    <h1>Mon nouveau document</h1>
+    <p onclick="number();">Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

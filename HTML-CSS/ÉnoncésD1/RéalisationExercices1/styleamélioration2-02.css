@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "afta_sansitalic", arial, helvetica;
+  src: url("aftasansthin-italic-webfont.woff2") format("woff2"),
+    url("aftasansthin-italic-webfont.woff") format("woff");
+  font-weigh: normal;
+  font-style: italic;
+}
+div1 p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+div2 p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 23</title>
+    <script>
+      /* var torture = function () {
+        var unNombre = prompt("Veuillez saisir un nombre");
+        unNombre = parseFloat(unNombre);
+        unNombre = isNaN(unNombre);
+        isNaN = +20;
+
+        while ((unNombre = isNaN)) {
+          var unNombre = prompt("Veuillez saisir un nombre");
+        }
+        alert(unNombre);
+      }; */
+
+      var torture = function () {
+        var testNombre = true;
+        while (testNombre) {
+          unNombre = prompt("Veuillez saisir un nombre");
+          unNombre = parseFloat(unNombre);
+          testNombre = isNaN(unNombre);
+        }
+        alert(unNombre);
+      };
+    </script>
+  </head>
+  <body onload="torture();">
+    <h1>Mon nouveau document</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

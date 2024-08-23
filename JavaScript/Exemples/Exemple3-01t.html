@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exemple3-01 tableau</title>
+    <script>
+      // Nous reprenons le code de l'exemple précedent en utilisant un tableau à la place des trois arguments pour la fonction. Celle-ci ne demandera donc qu'un argument
+
+      var manger = function (leProduit) {
+        var phrase =
+          "Pour" +
+          leProduit[0] +
+          ",nous prenons " +
+          leProduit[2] +
+          " " +
+          leProduit[1] +
+          ".";
+        alert(phrase);
+      };
+
+      manger(["l'entrée, ", " tomates", 3]);
+      manger([" le plat ", " salade composé", 1]);
+      manger([" le fromage ", " camembert", 1]);
+      manger([" le dessert ", " gâteaux au chocolat ", 2]);
+    </script>
+  </head>
+  <body>
+    <h1>Exemple3-01 tableau</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

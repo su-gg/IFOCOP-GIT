@@ -1,0 +1,9 @@
+div > p strong {
+  color: crimson;
+}
+div strong {
+  color: blueviolet;
+}
+strong {
+  color: blue;
+}

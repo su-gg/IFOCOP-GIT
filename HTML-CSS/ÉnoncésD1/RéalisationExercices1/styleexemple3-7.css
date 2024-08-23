@@ -1,0 +1,5 @@
+.conteneur6 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+}

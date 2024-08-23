@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 23</title>
+    <script>
+      var questionNombre = function () {
+        var unNombre = NaN;
+        while (isNaN(unNombre)) {
+          unNombre = prompt("Veuillez saisir un nombre");
+          unNombre = parseFloat(unNombre);
+        }
+        alert(unNombre);
+      };
+    </script>
+  </head>
+  <body onload="questionNombre();">
+    <h1>Mon nouveau document</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+body {
+  font-size: 20px;
+}
+
+h1 {
+  font-style: italic;
+}
+
+p {
+  font-weight: bold;
+  font-style: italic;
+}
+span {
+  font-style: normal;
+  font-weight: initial;
+}

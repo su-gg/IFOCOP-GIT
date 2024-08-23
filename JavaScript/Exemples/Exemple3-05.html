@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exemple 3-05</title>
+    <script>
+      var message = function (heure, salutation) {
+        if (!salutation) {
+          salutation = "bonjour!";
+        }
+        // dans une condition, undefined réagi comme false -> pour entre dans la condution si l'argument salutation n'est pas fourni il faut inverser la condition avec '!'
+
+        var phrase = "Il est " + heure + "," + salutation;
+        alert(phrase);
+      };
+      message("10h30", "la journée se passe bien");
+      message("8h");
+
+      // Il existe une façon plus moderne d'avoir des arguments par défaut :
+      var petitDejeuner = function (boisson, accompagnement = "deux tartines") {
+        var phrasepetitDejeuner =
+          "Pour le petit-déjeuner, je prends du " +
+          boisson +
+          " avec " +
+          accompagnement +
+          ".";
+        alert(phrasepetitDejeuner);
+      };
+      petitDejeuner("café ", " un croissant");
+      petitDejeuner("thé");
+    </script>
+  </head>
+  <body>
+    <h1>Exemple 3 - 05</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

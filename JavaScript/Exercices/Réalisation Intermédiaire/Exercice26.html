@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 26</title>
+    <script>
+      /*
+      var unNombre = function () {
+        var saisie = prompt("Veuillez saisir un texte");
+        var nouvelleSaisie = prompt("Veuillez saisir un texte");
+        var reponse = saisie,
+          nouvelleSaisie;
+
+        while (reponse) {
+          reponse = prompt("Veuillez saisir un texte");
+        }
+        for (var compteur = 0 ; compteur < 4; compteur++) {
+          alert(saisie);
+        }
+
+        alert(reponse);
+      }; 
+
+
+      -> nouveau test :
+      var tableau = [] ;
+
+      for ( i=0;i<4;) */
+
+      var quatreQuestions = function () {
+        var tableauTextes = [];
+        for (var i = 0; i < 4; i++) {
+          var leTexte = "";
+          while (leTexte == "" || leTexte == null) {
+            leTexte = prompt("Donnez le texte" + (i + 1));
+          }
+          tableauTextes[i] = leTexte;
+        }
+        alert(tableauTextes);
+      };
+    </script>
+  </head>
+  <body onload="quatreQuestions();">
+    <h1>Mon nouveau document</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

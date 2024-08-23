@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 17</title>
+    <script>
+      var rebelote = function () {
+        var reponseUtilisateur = prompt("Veuillez saisir un texte");
+        if (reponseUtilisateur == null) {
+          alert("Vous avez annulé la saisie");
+        } else {
+          if (reponseUtilisateur == "") {
+            alert("Vous n'avez rien saisi");
+          } else {
+            alert(reponseUtilisateur);
+          }
+        }
+      };
+    </script>
+  </head>
+  <body onload="rebelote();">
+    <h1>Mon nouveau document</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

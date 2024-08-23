@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 9</title>
+    <style>
+      [onclick] {
+        cursor: pointer;
+      }
+    </style>
+    <script src="/Users/suu/IFOCOP/JavaScript/Exercices/Réalisation base 1/Exercice09.js"></script>
+    <script>
+      // Question 1
+      var maFonction = function () {
+        alert(
+          "La fonction alert est déclenchée dans la fonction contenue dans la variable maFonction"
+        );
+      };
+      maFonction();
+
+      // Question 2 -> voir le premier
+      // Question 3 -> voir onload
+      // Question 4 -> voir p>script>mafonction
+    </script>
+  </head>
+  <body onload="maFonction()">
+    <h1>Mon nouveau document</h1>
+    <p onclick="maFonction()">Premier paragraphe</p>
+    <script>
+      maFonction();
+    </script>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

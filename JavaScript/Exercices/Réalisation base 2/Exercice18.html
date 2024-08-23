@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      [onclick] {
+        cursor: pointer;
+      }
+    </style>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 18</title>
+    <script>
+      var premiereVar = function () {
+        var texte = null;
+        while (texte == null || texte == "") {
+          texte = prompt("Veuillez saisir un message");
+        }
+        alert(texte);
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Mon nouveau document</h1>
+    <p onclick="premiereVar();">Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

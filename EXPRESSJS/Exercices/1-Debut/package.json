@@ -1,0 +1,15 @@
+{
+  "name": "1-debut",
+  "version": "1.0.0",
+  "description": "exercices",
+  "main": "exercice_01.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sugg",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

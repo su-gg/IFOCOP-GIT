@@ -1,0 +1,9 @@
+blockquote {
+  margin: 5%;
+  font-style: italic;
+  color: lightcoral;
+}
+
+cite {
+  font-style: normal;
+}

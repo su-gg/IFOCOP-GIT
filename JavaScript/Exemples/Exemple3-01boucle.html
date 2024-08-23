@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exemple3-01 en boucle</title>
+    <script>
+      // Nous reprenons le code de l'exemple précedent en utilisant une boucle pour ne pas écrire quatre fois l'appel de la fonction.
+      // Cela veut dire que nous pourvons regrouper les différentes valeurs à passer dans un tableau qui sera ensuite parcouru grâce à une boucle/
+
+      var manger = function (leProduit) {
+        var phrase =
+          "Pour" +
+          leProduit[0] +
+          ",nous prenons " +
+          leProduit[2] +
+          " " +
+          leProduit[1] +
+          ".";
+        alert(phrase);
+      };
+
+      var repas = [
+        ["l'entrée, ", " tomates", 3],
+        [" le plat ", " salade composé", 1],
+        [" le fromage ", " camembert", 1],
+        [" le dessert ", " gâteaux au chocolat ", 2],
+      ];
+
+      // i doit être inférieur à 4 car nous n'avons que 3 éléments plat, fromage... etc
+
+      // Autre façon d'écrire la ligne suivante :for (var i=0; repas[i;i++]);
+
+      for (var i = 0; i < 4; i++) {
+        manger(repas[i]);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Exemple3-01 en boucle</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

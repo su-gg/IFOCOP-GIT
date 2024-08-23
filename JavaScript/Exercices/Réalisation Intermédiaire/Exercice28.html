@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 28</title>
+    <script>
+      /*  tentative x
+        var quatreQuestions = function () {
+          var tableauTextes = [];
+          var i = 0;
+
+          while (leTexte == true) {
+            leTexte = prompt("Donnez le texte" + (compteur + 1));
+            i = confirm("Souhaitez-vous saisir un nouveau texte");
+          }
+        };
+        while ((leTexte = false)) {
+          alert(reponseU[i]);
+        }
+        }*/
+      /***************************************************\
+           *
+      solution avec FOR ( mais ce n'est pas ce qui est demandé)
+        var quatreQuestions = function () {
+          var tableauTextes = [];
+          var saisieSuivante = true;
+          for (var i = 0; saisieSuivante; i++) {
+            var leTexte = "";
+            while (leTexte == "" || leTexte == null) {
+              leTexte = prompt("Donnez le texte" + (i + 1));
+            }
+            tableauTextes[i] = leTexte;
+            saisieSuivante = confirm("voulez-vous continuer");
+          }
+          for (var j = 0; tableauTextes[j]; j++) {
+            alert(tableauTextes[j]);
+          }
+        };
+        /****************************
+         */
+
+      var quatreQuestions = function () {
+        var tableauTextes = [];
+        var saisieSuivante = true;
+        var i = 0;
+        while (saisieSuivante) {
+          var leTexte = "";
+          while (leTexte == "" || leTexte == null) {
+            leTexte = prompt("Donnez le texte" + (i + 1));
+          }
+          tableauTextes[i] = leTexte;
+          saisieSuivante = confirm("voulez-vous continuer");
+          i++;
+        }
+        for (var j = 0; tableauTextes[j]; j++) {
+          alert(tableauTextes[j]);
+        }
+      };
+    </script>
+  </head>
+  <body onload="quatreQuestions();">
+    <h1>Mon nouveau document</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

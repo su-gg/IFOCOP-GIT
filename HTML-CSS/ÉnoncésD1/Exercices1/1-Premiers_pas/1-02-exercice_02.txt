@@ -1,0 +1,14 @@
+-------------------------------------------------------
+------------------  Exercice 1 - 02  ------------------
+-------------------------------------------------------
+
+----------------   Présentation   -------------------
+
+On peux également en HTML faire de simples retours à la ligne. Pour cela, on utilise la balise br.
+Celle-ci s'écrit à l'emplacement exact souhaité pour le saut de ligne.
+Étant donné qu'il s'agit d'une balise unique, celle-ci s'écrit de la façon suivante : <br/>
+
+----------------   Réalisation   -------------------
+
+1 - Créez un nouveau document avec l'extension html. Reprenez le contenu de la page réalisée dans l'exercice précédent.
+2 - Intégrez un retour à la ligne dans le premier et le troisième paragraphe.

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exemple 5 - 01</title>
+    <script>
+      var leNombre = NaN;
+      while (isNaN(leNombre)) {
+        leNombre = prompt("Donnez moi un nombre");
+        leNombre = parseFloat(leNombre);
+      }
+      if (leNombre % 2) {
+        leNombre = parseInt(leNombre);
+      } else {
+        leNombre = -leNombre;
+      }
+      leNombre = leNombre % 2 ? parseInt(leNombre) : -leNombre;
+      alert(leNombre);
+    </script>
+  </head>
+  <body>
+    <h1>Exemple 5 - 01</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+body {
+  background-color: thistle;
+}
+
+#display-result {
+  color: white;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+#lolli {
+  display: none;
+}

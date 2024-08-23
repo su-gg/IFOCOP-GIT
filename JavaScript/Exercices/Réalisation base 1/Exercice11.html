@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 11</title>
+    <script>
+      // Question 1
+      // corrigé
+      var ajout = function () {
+        var association = "c'est chaud " + 10;
+        return association;
+      };
+
+      var valeurRetour = ajout();
+      alert(valeurRetour);
+
+      // Question 2
+      var assemblage = function (untableaufourni) {
+        var assemblagetableau = untableaufourni[0] + untableaufourni[1];
+        return assemblagetableau;
+      };
+      var phrase = ["cest bien ", "compliqué"];
+      var retourAssemblage = assemblage(phrase);
+      alert(retourAssemblage);
+    </script>
+  </head>
+  <body>
+    <h1>Mon nouveau document</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

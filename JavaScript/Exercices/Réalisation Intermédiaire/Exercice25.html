@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      [onclick] {
+        cursor: pointer;
+      }
+    </style>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 25</title>
+    <script>
+      /*
+          var action = function () {
+          var reponseUn = NaN;
+          while (isNaN(reponseUn)) {
+            reponseUn = parseFloat(prompt("Donnez moi un nombre"));
+          }
+
+          var reponseDeux = NaN;
+          while (isNaN(reponseDeux)) {
+            reponseDeux = parseFloat(prompt("Donnez moi un nombre"));
+          }
+
+          alert(reponseUn + reponseDeux);
+        };
+         */
+
+      /* MON ESSAI : mais le BDD reste bloqué sur 1 réponse client
+        for (
+          var uneDonnee = prompt("veuillez saisir un nombre");
+          parseFloat(uneDonnee);
+          isNaN(uneDonnee)
+        ) {
+          alert(uneDonnee);
+        } */
+      /* deuxième tentative échec
+      var action = function () {
+        while (isNaN) {
+          reponseUn, (reponseDeux = prompt("Donnez moi un nombre"));
+          alert(reponseUn + reponseDeux);
+        }
+      }; */
+
+      var demandeNombre = function (leTexte) {
+        var reponse = NaN;
+        while (isNaN(reponse)) {
+          reponse = parseFloat(prompt("Donnez un " + leTexte + " nombre"));
+        }
+        return reponse;
+      };
+
+      var action = function () {
+        var reponseUne = demandeNombre("premier");
+        var reponseDeux = demandeNombre("second");
+        alert(reponseUne + reponseDeux);
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Mon nouveau document</h1>
+    <p onclick="action();">Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

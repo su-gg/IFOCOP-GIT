@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX côté front-end (XHR)</title>
+  </head>
+  <!--
+    Au moyen de XHR, vous afficherez, dans des zones que vous définirez, les informations contenues
+    dans un formulaire que vous aurez au préalable construit et qui contiendra deux champs : 'title' et 'body',
+    ainsi qu'un bouton de soumission du formulaire. Ecrivez votre code javascript dans le fichier xhr.js
+  -->
+  <h1 class="XHRTitle">Formulaire test</h1>
+  <p class="XHRBody">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore aperiam
+    blanditiis reiciendis in, explicabo corporis magnam molestiae voluptate vero
+    aut architecto expedita sapiente quam quae provident repellendus placeat
+    ipsam! Officiis!
+  </p>
+  <br />
+  <body>
+    <form action=""  id="dataForm" method="post">
+      <fieldset>
+        <legend>Contact</legend>
+
+        <ul>
+          <li>
+            <label for="title">Titre</label>
+            <Input type="text" id="title" name=""></Input>
+          </li>
+          <li>
+            <label for="body"> Nom </label>
+            <input type="text" id="body" name="Gonzalez" />
+          </li>
+          <li>
+            <label for="firstname">Prénom</label>
+            <input type="text" id="firstname" name="Suzanne" />
+          </li>
+          <li>
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="email@gmail.com" />
+          </li>
+        </ul>
+        <div class="button">
+          <button type="submit">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

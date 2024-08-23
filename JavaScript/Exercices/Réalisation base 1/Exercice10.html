@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 10</title>
+    <script>
+      // Question 1
+
+      var affichage = function (argument) {
+        alert(argument);
+      };
+      affichage("nul");
+      affichage("un second texte");
+
+      // Question 2
+      var autreaffichage = function (entreeUn, entreedeux) {
+        var assemblage = entreeUn + entreedeux;
+        alert(assemblage);
+      };
+      autreaffichage("On s'en sort ", "comme on peut");
+
+      // Question 3
+      var tableau = function (untableaufourni) {
+        var assemblagetableau = untableaufourni[0] + untableaufourni[1];
+        alert(assemblagetableau);
+      };
+      var phrase = ["cest bien ", "compliqué"];
+      tableau(phrase);
+    </script>
+  </head>
+  <body>
+    <h1>Mon nouveau document</h1>
+    <p>Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>

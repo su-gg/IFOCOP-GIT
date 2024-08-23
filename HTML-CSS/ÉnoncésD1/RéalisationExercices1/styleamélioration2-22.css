@@ -1,0 +1,21 @@
+.p1:hover {
+  background-color: blue;
+}
+
+.p2 {
+  border: 4px dashed transparent;
+}
+
+.p2:hover {
+  border-color: blue;
+}
+
+.p3:hover {
+  width: 50%;
+  height: 50px;
+  overflow: hidden;
+}
+
+h1:hover ~ div p {
+  font-style: italic;
+}

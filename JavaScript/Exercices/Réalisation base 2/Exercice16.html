@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript : Exercice 16</title>
+    <style>
+      [onclick] {
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      // Question 1 : le code suivant fonctionne :
+      /*var Test1 = function () {
+              alert(prompt("Veuillez saisir un message"));
+            }; */
+      /* corrigée ci-dessous:
+            var Test1 = function () {
+              var reponsePrompt = prompt("Veuillez saisir un message");
+              alert(reponsePrompt);
+            }; */
+
+      var Test1 = function () {
+        var reponseUtilisateur = prompt("Veuillez saisir un message");
+        alert(reponseUtilisateur);
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Mon nouveau document</h1>
+    <p onclick="Test1()">Premier paragraphe</p>
+    <p>Deuxième paragraphe</p>
+    <noscript>
+      <p>Veuillez activer JavaScript</p>
+    </noscript>
+  </body>
+</html>
